@@ -1,6 +1,9 @@
 #Netflix-GPT
 - Create React app
 - Configured Tailwind CSS into our app
+- Header
+- Login Form
+- Sign up Form
 
 #Features
 - Login/Sign Up
