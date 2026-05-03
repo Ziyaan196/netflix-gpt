@@ -28,6 +28,12 @@
 - Update the store with trailor video data
 - Embedded the youtube video
 - Tailwind classes to make it look good
+- Build secondary Component
+- Build Movie list
+- Build Movie Card
+- TMDB image cdn url
+- Made the UI look better
+
 
 #Features
 - Login/Sign Up
