@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG_IMG_URL, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -75,8 +75,8 @@ const Login = () => {
       <Header />
       <div className="absolute ">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-en-20260427-TRIFECTA-perspective_0933b420-0cb6-4e67-8e9d-3224dc64b517_large.jpg"
-          alt="Login"
+            src={BG_IMG_URL}
+            alt="Login"
         ></img>
       </div>
       <form
@@ -110,18 +110,17 @@ const Login = () => {
         <p className="text-red-500">{errMessage}</p>
 
         <button
-          className="bg-[#e50914] my-6 p-4 rounded-lg"
+          className="bg-[#e50914] my-6 p-4 rounded-lg font-bold text-lg hover:bg-[#e50914]/70 hover:scale-105 active:scale-95 transition-all duration-150"
           onClick={handleButtonClick}
         >
           {isSignIn ? "Sign In" : "Sign Up"}
         </button>
-        <p className="text-gray-400">
+        <p className="text-white/50">
           {isSignIn ? "Don't have an account?" : "Already have an account?"}
           <span
-            className="text-white cursor-pointer"
+            className="text-white cursor-pointer hover:text-gray-700 px-1 transition-all duration-150"
             onClick={toggleSignInForm}
           >
-            {" "}
             {isSignIn ? "Sign Up " : "Sign In "}
           </span>
           Now

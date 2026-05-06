@@ -33,6 +33,11 @@
 - Build Movie Card
 - TMDB image cdn url
 - Made the UI look better
+- Use popular custom hook
+- GPT search Page
+- GPT search bar
+- Added multi-language feature to our app
+- Integrate GPT APIs
 
 
 #Features
